@@ -1,12 +1,40 @@
 import React, { Component } from 'react';
 
-class About extends Component{
+ class About extends Component{
+   constructor(props) {
+     super(props);
+
+     this.state = {
+       uploadUrl: '',
+     };
+   }
+   handleDownloadFile = (event) => {
+     event.preventDefault();
+     console.log("in handle download");
+   }
+/*
+     const data = new FormData();
+     data.append('file', event.target.files);
+     data.append('name', 'some value user types');
+     data.append('description', 'some value user types');
+
+     get('http://localhost:8000/upload', {
+      method: 'GET',
+      body: data,
+     }).then((response) => {
+      response.json().then((body) => {
+        console.log("downloaded resume");
+      });
+    });
+   }
+*/
   render(){
   //  console.log(this.props);
     if(this.props.data){
             var name = this.props.data.name;
             console.log(this.props.data);
     }
+
 
     return(
       <div className = "about">
@@ -17,7 +45,7 @@ class About extends Component{
                <h5>About</h5>
                <h1>Let me introduce myself.</h1>
                <div className="intro-info">
-                 <img src="images/manju1.jpg"  alt="Profile Picture"/>
+                 <img src="images/manju.png"  alt="Profile Picture"/>
                   <p className="lead"></p>
                 </div>
            </div>
@@ -31,18 +59,12 @@ class About extends Component{
                    <strong>Fullname:</strong>
                    <span>{name}</span>
                  </li>
-                 <li>
-                   <strong>Birth Date:</strong>
-                   <span>November 3, 1988</span>
-                 </li>
+
                  <li>
                    <strong>Job:</strong>
                    <span>Fresh Graduate</span>
                  </li>
-                 <li>
-                   <strong>Website:</strong>
-                   <span>www.manjulaNaga.com</span>
-                 </li>
+
                  <li>
                    <strong>Email:</strong>
                    <span>cnagamanju@gmail.com</span>
@@ -55,16 +77,32 @@ class About extends Component{
              <p>Here are my skill</p>
 
              <ul className="skill-bars">
+               <li>
+                <div className="progress percent90"><span>90%</span></div>
+                <strong>JAVASCRIPT</strong>
+               </li>
+               <li>
+                <div className="progress percent75"><span>75%</span></div>
+                <strong>REACT JS</strong>
+               </li>
+               <li>
+                <div className="progress percent85"><span>85%</span></div>
+                <strong>NODE JS</strong>
+               </li>
+               <li>
+                <div className="progress percent75"><span>75%</span></div>
+                <strong>REST API</strong>
+               </li>
                 <li>
                  <div className="progress percent90"><span>90%</span></div>
                  <strong>HTML5</strong>
                 </li>
                 <li>
-                 <div className="progress percent85"><span>85%</span></div>
+                 <div className="progress percent98 "><span>98%</span></div>
                  <strong>CSS3</strong>
                 </li>
                 <li>
-                 <div className="progress percent70"><span>70%</span></div>
+                 <div className="progress percent90"><span>90%</span></div>
                  <strong>JQuery</strong>
                 </li>
                 <li>
@@ -75,14 +113,7 @@ class About extends Component{
                  <div className="progress percent75"><span>75%</span></div>
                  <strong>JAVA</strong>
                 </li>
-                <li>
-                 <div className="progress percent75"><span>75%</span></div>
-                 <strong>JAVASCRIPT</strong>
-                </li>
-                <li>
-                 <div className="progress percent75"><span>75%</span></div>
-                 <strong>REACT JS</strong>
-                </li>
+
                 <li>
                  <div className="progress percent75"><span>75%</span></div>
                  <strong>C++</strong>
@@ -91,25 +122,34 @@ class About extends Component{
                  <div className="progress percent75"><span>75%</span></div>
                  <strong>CORDOVA</strong>
                 </li>
-                <li>
-                 <div className="progress percent75"><span>75%</span></div>
-                 <strong>NODE JS</strong>
-                </li>
-                <li>
-                 <div className="progress percent75"><span>75%</span></div>
-                 <strong>REST API</strong>
-                </li>
+
                 <li>
                  <div className="progress percent75"><span>75%</span></div>
                  <strong>MONGO DB</strong>
                 </li>
                 <li>
-                 <div className="progress percent75"><span>75%</span></div>
+                 <div className="progress percent90"><span>90%</span></div>
                  <strong>SQL</strong>
                 </li>
                 <li>
-                 <div className="progress percent75"><span>75%</span></div>
+                 <div className="progress percent90"><span>90%</span></div>
                  <strong>MYSQL</strong>
+                </li>
+                <li>
+                 <div className="progress percent70"><span>70%</span></div>
+                 <strong>Mocha</strong>
+                </li>
+                <li>
+                 <div className="progress percent60"><span>60%</span></div>
+                 <strong>Chai</strong>
+                </li>
+                <li>
+                 <div className="progress percent70"><span>70%</span></div>
+                 <strong>Neo4j</strong>
+                </li>
+                <li>
+                 <div className="progress percent60"><span>60%</span></div>
+                 <strong>D3.JS</strong>
                 </li>
              </ul>
 
@@ -119,7 +159,8 @@ class About extends Component{
          <div className="row button-section">
            <div className="col-twelve">
              <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
-             <a href="#" title="Download CV" className="button button-primary">Download CV</a>
+             <button className="button button-primary" onClick ={this.handleDownloadFile.bind(this)}>Download CV</button>
+                 {this.state.uploadUrl}
            </div>
          </div>
 

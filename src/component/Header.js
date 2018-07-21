@@ -5,20 +5,30 @@ class Header extends Component{
   render(){
     return(
       <div className = "Header">
+
+
          	<div className="row">
 
          		<div className="top-bar">
-         			<a className="menu-toggle" href="#"><span>Menu</span></a>
+         			<a className="menu-toggle" href="#">
+                <span>
+                  Menu
+                </span>
+              </a>
 
       	   		<div className="logo">
       		         <a href="index.html">home</a>
       		      </div>
 
       		   	<nav id="main-nav-wrap">
-      					<ul className="main-navigation">
+
+      					<ul className="main-navigation" >
+
       						<li className="current">
                     <a className="smoothscroll"  href="#intro" title="">Home</a>
                   </li>
+                  <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
       						<li><a className="smoothscroll"  href="#about" title="">About</a></li>
       						<li><a className="smoothscroll"  href="#resume" title="">Resume</a></li>
       						<li><a className="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>

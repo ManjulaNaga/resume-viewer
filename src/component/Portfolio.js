@@ -27,7 +27,7 @@ class Portfolio extends Component{
                   <div className="bgrid folio-item">
                        <div className="item-wrap">
                         <img src="images/portfolio/myhikes2.jpg" alt="myhikes"/>
-                          <a href="#modal-01" className="overlay">
+                          <a href="https://github.com/ManjulaNaga/MyHikes" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
                                <h3 className="folio-title">My Hikes</h3>
@@ -42,7 +42,7 @@ class Portfolio extends Component{
                     <div className="bgrid folio-item">
                        <div className="item-wrap">
                         <img src="images/portfolio/mhrestAPI.jpg" alt="myhikesapi"/>
-                          <a href="#modal-06" className="overlay">
+                          <a href="https://github.com/ManjulaNaga/MyHikesAPI" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
                                 <h3 className="folio-title">My Hikes API</h3>
@@ -58,7 +58,7 @@ class Portfolio extends Component{
                     <div className="bgrid folio-item">
                        <div className="item-wrap">
                         <img src="images/portfolio/todo.jpg"alt="todo"/>
-                          <a href="#modal-03" className="overlay">
+                          <a href="https://github.com/ManjulaNaga/TodoApp" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
                                 <h3 className="folio-title">TodoList</h3>
@@ -74,7 +74,7 @@ class Portfolio extends Component{
                     <div className="bgrid folio-item">
                        <div className="item-wrap">
                         <img src="images/portfolio/restAPI.png" alt="todoapi"/>
-                          <a href="#modal-04" className="overlay">
+                          <a href="https://github.com/ManjulaNaga/TodoAppAPI" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
                                 <h3 className="folio-title">Todo API</h3>
@@ -90,7 +90,7 @@ class Portfolio extends Component{
                     <div className="bgrid folio-item">
                        <div className="item-wrap">
                         <img src="images/portfolio/vidhya3.png" alt="vidhyardhi"/>
-                        <a href="#modal-02" className="overlay">
+                        <a href="https://github.com/ManjulaNaga/Vidhyardhi" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
                                 <h3 className="folio-title">Vidhyardhi</h3>
@@ -105,11 +105,11 @@ class Portfolio extends Component{
 
                     <div className="bgrid folio-item">
                        <div className="item-wrap">
-                        <img src="images/portfolio/skills.jpg" alt="react"/>
-                          <a href="#modal-05" className="overlay">
+                        <img src="images/portfolio/academic1.jpg" alt="react"/>
+                          <a href="https://github.com/ManjulaNaga/academic_schedule_app" className="overlay">
                              <div className="folio-item-table">
                               <div className="folio-item-cell">
-                                <h3 className="folio-title">Simple React Website</h3>
+                                <h3 className="folio-title">Academic Scheduler App</h3>
                               <span className="folio-types">
                                   React Web Development
                               </span>
@@ -118,7 +118,37 @@ class Portfolio extends Component{
                           </a>
                        </div>
                     </div>
+                    <div className="bgrid folio-item">
+                       <div className="item-wrap">
+                        <img src="images/portfolio/chat1.jpeg" alt="react"/>
+                          <a href="https://github.com/ManjulaNaga/secure-chatroom" className="overlay">
+                             <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">Secured Chatroom</h3>
+                              <span className="folio-types">
+                                  Java,JCA,Security
+                              </span>
+                           </div>
+                             </div>
+                          </a>
+                       </div>
+                    </div>
 
+                    <div className="bgrid folio-item">
+                       <div className="item-wrap">
+                        <img src="images/portfolio/resume.jpg" alt="react"/>
+                          <a href="https://github.com/ManjulaNaga/resume-viewer" className="overlay">
+                             <div className="folio-item-table">
+                              <div className="folio-item-cell">
+                                <h3 className="folio-title">View My Resume</h3>
+                              <span className="folio-types">
+                                  React JS,Node JS,JSON
+                              </span>
+                           </div>
+                             </div>
+                          </a>
+                       </div>
+                    </div>
 
                     <div id="modal-01" className="popup-modal slider mfp-hide">
 

@@ -73,10 +73,10 @@ class Contact extends Component{
               <h5>Where to find me</h5>
 
               <p>
-                  38640<br/>
-                  Hastings st Apt 104,<br/>
-                  Fremont, CA<br/>
-                  94536 US
+                  25800<br/>
+                  Carlos Bee Blvd,<br/>
+                  Hayward, CA<br/>
+                  94542 US
               </p>
 
             </div>
@@ -90,7 +90,7 @@ class Contact extends Component{
               <h5>Email Me At</h5>
 
               <p>cnagamanju@gmail.com<br/>
-                knmanju@gmail.com</p>
+              </p>
 
             </div>
 
@@ -102,9 +102,9 @@ class Contact extends Component{
 
               <h5>Call Me At</h5>
 
-              <p>Phone: +1(408) 809 6866<br/>
-                Mobile: +1(408) 809 6866<br/>
-                  Fax: +1(408) 809 6866
+              <p>Phone: +1(xxx) xxx xxxx<br/>
+                Mobile: +1(xxx) xxx xxxx<br/>
+                  Fax: +1(xxx) xxx xxxx
                </p>
 
             </div>

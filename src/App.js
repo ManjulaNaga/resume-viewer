@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import './App.css';
 
 import $ from 'jquery';
+import Intro from './component/Intro.js';
 import About from './component/About.js';
 import Resume from './component/Resume.js';
 import Header from './component/Header.js';
 import Contact from './component/Contact.js';
-import Footer from './component/Footer.js';
-import Portfolio from './component/Portfolio.js';
-import Testimonials from './component/Testimonials.js';
+import Footer from './component/Footer';
+import Portfolio from './component/Portfolio';
+import Testimonials from './component/Testimonials';
+import UploadFile from './component/UploadFile';
 
 class App extends Component {
   constructor(props){
@@ -43,11 +45,12 @@ class App extends Component {
     return (
 
       <div className="App">
-        My resume
         <Header />
+        <Intro/>
         <About data = {this.state.resumeData.basics}/>
         <Resume/>
         <Header/>
+        <UploadFile/>
         <Portfolio/>
         <Testimonials/>
         <Contact/>
