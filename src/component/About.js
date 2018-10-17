@@ -160,7 +160,7 @@ import React, { Component } from 'react';
            <div className="col-twelve">
              <a href="#contact" title="Hire Me" className="button stroke smoothscroll">Hire Me</a>
              <button className="button button-primary" onClick ={this.handleDownloadFile.bind(this)}>Download CV</button>
-                 {this.state.uploadUrl}
+             <a href = "NagaManjula.pdf" download>Download</a>
            </div>
          </div>
 

@@ -10,7 +10,8 @@ import Contact from './component/Contact.js';
 import Footer from './component/Footer';
 import Portfolio from './component/Portfolio';
 import Testimonials from './component/Testimonials';
-import UploadFile from './component/UploadFile';
+//import UploadFile from './component/UploadFile';
+//import UploadResume from './component/UploadResume';
 
 class App extends Component {
   constructor(props){
@@ -50,7 +51,6 @@ class App extends Component {
         <About data = {this.state.resumeData.basics}/>
         <Resume/>
         <Header/>
-        <UploadFile/>
         <Portfolio/>
         <Testimonials/>
         <Contact/>
